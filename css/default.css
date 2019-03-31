@@ -1,0 +1,82 @@
+* {
+    outline: none;
+}
+
+.game-card-container {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-card {
+    display: grid;
+    grid-template-columns: 140px 600px 110px;
+    grid-template-rows: 250px;
+    grid-gap: 1em;
+    color: #595054;
+}
+
+.game-card .label {
+    color: #c9c0c4;
+}
+
+.game-card > .organizer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.game-card > .organizer > .organizer-avatar {
+    width: 140px;
+    height: 140px;
+    padding: 2px;
+    border: 4px solid #ccc;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 4px #ddd);
+    object-fit: cover;
+}
+
+.game-card > .organizer > .organizer-rating {
+    margin-top: 1em;
+}
+
+.game-card > .organizer > .organizer-rating > i {
+    color: orange;
+}
+
+.game-card > .details {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 130px 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.game-card > .details > .when-and-where {
+    grid-column: 1 / 4;
+    display: inherit;
+    grid-template-columns: inherit;
+}
+
+.game-card > .details > .when-and-where > .where {
+    grid-column: 2 / 4;
+    text-align: right;
+}
+
+.game-card > .details > .description {
+    grid-column: 1 / 4;
+    border-top: 1px solid #ddd;
+    padding-top: 1em;
+}
+
+.game-card > .game > .label:not(:first-of-type){
+    margin-top: 1em;
+}

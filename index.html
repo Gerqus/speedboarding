@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+        <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/database.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="nav nav-tabs" id="myTab" role="tablist">
+                <div class="nav-item">
+                    <a class="nav-link active" data-tab-id="search" href="#search" onclick="navigate(this)">Znajdź gry</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" data-tab-id="plan" href="#plan" onclick="navigate(this)">Zaplanuj grę</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="search">
+                <div class="container-fluid">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="game-card-container">
+                                <div class="game-card">
+                                    <div class="organizer">
+                                        <img class="organizer-avatar" src="./assets/images/organiser1.jpg" />
+                                        <div class="organizer-rating">
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="when-and-where">
+                                            <span class="when label">Kiedy?</span>
+                                            <span class="where label">Gdzie?</span>
+                                            <span class="when">13.04.2019</span>
+                                            <span class="where">
+                                                <div>Hex</div>
+                                                <div>Stanisława Dubois 33/35, Wrocław</div>
+                                            </span>
+                                        </div>
+                                        <div class="description">
+                                            Gramy jak zwykle w Hexie. Przynoszę dodatek: Dixit Quest. Mile widziani gracze z każdym stopniem doświadczenia.
+                                        </div>
+                                    </div>
+                                    <div class="game">
+                                        <div class="game-name label">Gra:</div>
+                                        <div class="game-name">Dixit</div>
+
+                                        <div class="game-genre label">Gatunek:</div>
+                                        <div class="game-genre">Karciana, Kreatywność</div>
+
+                                        <div class="players-count label">Liczba graczy:</div>
+                                        <div class="players-count">2 / 3-6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="game-card-container">
+                                <div class="game-card">
+                                    <div class="organizer">
+                                        <img class="organizer-avatar" src="./assets/images/organizer2.jpg" />
+                                        <div class="organizer-rating">
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fas fa-star-half-alt checked"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="when-and-where">
+                                            <span class="when label">Kiedy?</span>
+                                            <span class="where label">Gdzie?</span>
+                                            <span class="when">16.04.2019</span>
+                                            <span class="where">
+                                                <div>Cybermachina</div>
+                                                <div>Szczytnicka 52, Wrocław</div>
+                                            </span>
+                                        </div>
+                                        <div class="description">
+                                            Projekt X w cyber! Zapraszam na wspólne planszówkowanie w różnych stylach i odmianach!
+                                        </div>
+                                    </div>
+                                    <div class="game">
+                                        <div class="game-name label">Gra:</div>
+                                        <div class="game-name">Różne</div>
+
+                                        <div class="game-genre label">Gatunek:</div>
+                                        <div class="game-genre">Różne</div>
+
+                                        <div class="players-count label">Liczba graczy:</div>
+                                        <div class="players-count">7 / Dowolnie</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="plan">plan</div>
+        </div>
+    </body>
+</html>
